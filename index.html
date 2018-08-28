@@ -1,15 +1,714 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>최호현</title>
-</head>
-<body>
-    <h1>내 홈피</h1>    
-    <p>나는 최호현이다.</p>
-    <img src="data:image/jpeg;base64,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">
-    <a href="https://github.com/JaydenHoHyeonChoi">Github 링크</a>
-</body>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Agency - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="https://github.com/JaydenHoHyeonChoi">Go To Github</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-lead-in">Welcome To Jayden Choi's Page!</div>
+          <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Services -->
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Services</h2>
+            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">E-Commerce</h4>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Responsive Design</h4>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Web Security</h4>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="bg-light" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Portfolio</h2>
+            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Threads</h4>
+              <p class="text-muted">Illustration</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Explore</h4>
+              <p class="text-muted">Graphic Design</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Finish</h4>
+              <p class="text-muted">Identity</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Lines</h4>
+              <p class="text-muted">Branding</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Southwest</h4>
+              <p class="text-muted">Website Design</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Window</h4>
+              <p class="text-muted">Photography</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">About</h2>
+            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>2009-2011</h4>
+                    <h4 class="subheading">Our Humble Beginnings</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>March 2011</h4>
+                    <h4 class="subheading">An Agency is Born</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>December 2012</h4>
+                    <h4 class="subheading">Transition to Full Service</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>July 2014</h4>
+                    <h4 class="subheading">Phase Two Expansion</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <h4>Be Part
+                    <br>Of Our
+                    <br>Story!</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="bg-light" id="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
+              <h4>Kay Garland</h4>
+              <p class="text-muted">Lead Designer</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
+              <h4>Larry Parker</h4>
+              <p class="text-muted">Lead Marketer</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
+              <h4>Diana Pertersen</h4>
+              <p class="text-muted">Lead Developer</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img class="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img class="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img class="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Contact Us</h2>
+            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <form id="contactForm" name="sentMessage" novalidate="novalidate">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <textarea class="form-control" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-lg-12 text-center">
+                  <div id="success"></div>
+                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright">Copyright &copy; Your Website 2018</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Terms of Use</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+
+    <!-- Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Project Name</h2>
+                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
+                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <ul class="list-inline">
+                    <li>Date: January 2017</li>
+                    <li>Client: Threads</li>
+                    <li>Category: Illustration</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Project Name</h2>
+                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
+                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <ul class="list-inline">
+                    <li>Date: January 2017</li>
+                    <li>Client: Explore</li>
+                    <li>Category: Graphic Design</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Project Name</h2>
+                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
+                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <ul class="list-inline">
+                    <li>Date: January 2017</li>
+                    <li>Client: Finish</li>
+                    <li>Category: Identity</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Project Name</h2>
+                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
+                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <ul class="list-inline">
+                    <li>Date: January 2017</li>
+                    <li>Client: Lines</li>
+                    <li>Category: Branding</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Project Name</h2>
+                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
+                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <ul class="list-inline">
+                    <li>Date: January 2017</li>
+                    <li>Client: Southwest</li>
+                    <li>Category: Website Design</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Project Name</h2>
+                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
+                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <ul class="list-inline">
+                    <li>Date: January 2017</li>
+                    <li>Client: Window</li>
+                    <li>Category: Photography</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+
+  </body>
+
 </html>
